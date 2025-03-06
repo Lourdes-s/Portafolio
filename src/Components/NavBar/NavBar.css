@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 250px;
+    /* Ancho del menú */
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    background-color: #ffdde1;
+    /* Fondo rosa clarito */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar */
+}
+
+/* Lista de navegación en columna */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Espaciado entre links */
+}
+
+/* Elementos de la lista */
+.list-item {
+    font-size: 18px;
+}
+
+/* Links */
+.nav-link {
+    text-decoration: none;
+    color: #753737;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ff5c8a;
+    /* Cambio de color en hover */
+}
+
+/* Botón de descarga */
+.cv-button {
+    margin-top: 30px;
+    background-color: #d38fa3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cv-button:hover {
+    background-color: #b84c6a;
+}
+
+/* Asegurar que el contenido principal no quede oculto detrás del nav */
+.main-content {
+    margin-left: 250px;
+    /* Mismo ancho que el nav */
+    padding: 20px;
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-me {
+    max-width: 1200px; 
+    min-width: 320px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    color: #eca9a9;
+    text-align: right;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: #eca9a9;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+
+.about-subtitle {
+    font-size: 2rem; 
+    color: #555; 
+    text-align: left; 
+    margin-bottom: 20px; 
+    max-width: 500px;
+}
+
+.about-text {
+    flex: 1; 
+    margin-right: 20px; 
+    max-width: 55%;
+    text-align: right;
+}
+
+p {
+    text-align: left;
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+.email-highlight {
+    color: #eca9a9; 
+    font-weight: bold;
+    padding-left: 5px; 
+}
+
+.copy-button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.copy-button:hover {
+    color: #eca9a9; 
+}
+
+.about-image {
+    flex-shrink: 0;
+    max-width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.social-icons {
+    color: #4d4d4d;    
+    display: flex; 
+    justify-content: left; 
+    margin-top: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background-color: #eca9a9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.social-icons a svg {
+    font-size: 2rem;
+    width: 24px;
+    height: 24px;
+    color: #464646; 
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
+
+@media (max-width: 1020px) {
+    .about-title {
+        font-size: 3rem;
+        padding-right: 30px;
+    }
+
+    .about-text {
+        max-width: 60%;
+    }
+
+    .about-image {
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .about-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
+
+    .about-text {
+        max-width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .about-image {
+        max-width: 60%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 280px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons a svg {
+        font-size: 1.5rem;
+        width: 20px;
+        height: 20px;
+    }
+}
