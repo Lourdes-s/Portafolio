@@ -46,14 +46,14 @@
 .technologies-icon {
     font-size: 3rem;
     color: #eca9a9; 
-    margin-bottom: 5px; /* Reduce la separación */
+    margin-bottom: 5px; 
 }
 
 .technologies-icon-frontend {
-    font-size: 3.5rem; /* Mantiene el tamaño más grande */
+    font-size: 3.5rem; 
     color: #eca9a9;
     font-weight: bold;
-    margin-bottom: -5px; /* Mueve el subtítulo un poco más arriba */
+    margin-bottom: -5px; 
 }
 
 .technologies-subtitle {
