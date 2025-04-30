@@ -1,0 +1,156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.proyectos h1 {
+    font-size: 3.5rem;
+    color: #eca9a9;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.proyectos .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 45%;
+    object-fit: cover;
+    height: auto;
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-content h3 {
+    font-size: 1.8rem;
+    color: #eca9a9;
+    margin-bottom: 1rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.botones {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-codigo,
+.btn-demo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.btn-codigo svg,
+.btn-demo svg {
+    font-size: 1.2rem;
+}
+
+.btn-codigo {
+    background-color: #ffffff;
+    color: #eca9a9;
+    border: 1px solid #eca9a9;
+}
+
+.btn-demo {
+    background-color: #ffffff;
+    color: #eca9a9;
+    border: 1px solid #eca9a9;
+}
+
+.btn-codigo:hover {
+    background-color: #eca9a9;
+    color: white;
+}
+
+.btn-demo:hover {
+    background-color: #eca9a9;
+    color: white;
+}
+
+/* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
+
+@media (max-width: 1020px) {
+    .project-card {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-content {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyectos h1 {
+        font-size: 2rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-codigo,
+    .btn-demo {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+
+    .btn-codigo,
+    .btn-demo {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
