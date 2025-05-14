@@ -47,7 +47,8 @@
 
 .cv-button {
     margin-top: 30px;
-    background-color: #d38fa3;
+    background-color: #eca9a9;
+    text-decoration: none;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -58,7 +59,7 @@
 }
 
 .cv-button:hover {
-    background-color: #b84c6a;
+    background-color: #c48c8c;
 }
 
 .main-content {

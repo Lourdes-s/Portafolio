@@ -27,7 +27,7 @@ export const AboutMe = () => {
                     </p>
                 </div>
                 <div className="about-image">
-                    <img src="/assets/TestPic.png" alt="Ilustración de Lourdes Santillán"/>
+                    <img src="/assets/images/TestPic.png" alt="Ilustración de Lourdes Santillán"/>
                 </div>
             </div>
             <p>

@@ -8,7 +8,7 @@ export const Projects = () => {
             <h1>Proyectos</h1>
             <div className="cards-container">
                 <div className="project-card">
-                    <img src="/assets/Mensajeria.jpg" alt="Proyecto Mensajería" />
+                    <img src="/assets/images/Mensajeria.jpg" alt="Proyecto Mensajería" />
                     <div className="project-content">
                         <h3>Proyecto Mensajería</h3>
                         <p>Aplicación web inspirada en WhatsApp Web, con login, registro, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
