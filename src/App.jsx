@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBar, Footer, AboutMe, Technologies, Projects} from "./Components"
+import { NavBar, Footer, AboutMe, Technologies, Projects, Formation } from "./Components"
 
 function App() {
     return (
@@ -9,7 +9,7 @@ function App() {
                 <AboutMe />
                 <Technologies />
                 <Projects />
-                <section id="formation" className="">Formación</section>
+                <Formation />
             </main>
             <Footer />
         </div>
