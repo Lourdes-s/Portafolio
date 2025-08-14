@@ -5,30 +5,52 @@ import { RiArrowDownWideLine, RiArrowUpWideLine } from "react-icons/ri"
 import "./Formation.css"
 
 export const Formation = () => {
-    const [showCertificate, setShowCertificate] = useState(false)
-    const handleToggle = () => {
-        setShowCertificate(!showCertificate)
+    const [openIndex, setOpenIndex] = useState(null)
+
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index)
     }
+
+
+    const formations = [
+        {
+            title: "Diplomatura en Desarrollo Web Full Stack",
+            institution: "Universidad Tecnológica Nacional (UTN)",
+            year: "2024",
+            img: "/assets/images/Certificado-UTN.jpg",
+            pdf: "/assets/documents/Certificado-UTN.pdf"
+        },
+        {
+            title: "Desarrollo Web Desde Cero: HTML5, CSS3 y JavaScript",
+            institution: "Udemy",
+            year: "2025",
+            img: "/assets/images/Certificado-Udemy.jpg",
+            pdf: "/assets/documents/Certificado-Udemy.pdf"
+        }
+    ]
     return (
         <div className='formation-container'>
             <h1 className='formation-title'>Formación</h1>
             <div className='certificates-container'>
-                <div>
-                    <GiGraduateCap className='icon-graduate' />
-                    <h3>Diplomatura en Desarrollo Web Full Stack</h3>
-                    <p>Universidad Tecnológica Nacional (UTN)</p>
-                    <p>2024</p>
-                    <div className='More-info' onClick={handleToggle}>
-                        {showCertificate ? <RiArrowUpWideLine /> : <RiArrowDownWideLine />}
+                {formations.map((item, index) => (
+                    <div key={index} className='certificate-card'>
+                        <GiGraduateCap className='icon-cap' />
+                        <h3>{item.title}</h3>
+                        <p>{item.institution}</p>
+                        <p className='year'>{item.year}</p>
+                        <div className='more-info-btn' onClick={() => handleToggle(index)}>
+                            {openIndex === index
+                                ? <RiArrowUpWideLine />
+                                : <RiArrowDownWideLine />}
+                        </div >
+                        {openIndex === index && (
+                            <div className='certificate-details'>
+                                <img src={item.img} alt="Certificado" />
+                                <a href={item.pdf} target='_blank' rel='noopener noreferrer' className='view-pdf'> Ver certificado</a>
+                            </div>
+                        )}
                     </div>
-                    {showCertificate && (
-                        <div className='certificate-image'>
-                            <a href="/assets/documents/Certificado-UTN.pdf" target="_blank" rel="noopener noreferrer">
-                                <img src="/assets/images/Certificado-UTN.jpg" alt="Diploma"/>
-                            </a>
-                        </div>
-                    )}
-                </div>
+                ))}
             </div>
         </div>
     )
