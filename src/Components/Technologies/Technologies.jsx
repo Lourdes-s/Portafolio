@@ -7,7 +7,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 export const Technologies = () => {
     return (
-        <section className="technologies"> 
+        <section id='technologies' className="technologies"> 
             <h1 className="technologies-title">Tecnologías</h1>
             <div className="technologies-container">
                 <div className="technologies-category">

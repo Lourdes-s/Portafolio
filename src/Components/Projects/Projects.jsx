@@ -4,7 +4,7 @@ import { PiGithubLogo, PiLink } from "react-icons/pi"
 
 export const Projects = () => {
     return (
-        <div className="proyectos">
+        <div id="projects" className="proyectos">
             <h1>Proyectos</h1>
             <div className="cards-container">
                 <div className="project-card">

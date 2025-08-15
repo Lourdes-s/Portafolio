@@ -29,7 +29,7 @@ export const Formation = () => {
         }
     ]
     return (
-        <div className='formation-container'>
+        <div id='formation' className='formation-container'>
             <h1 className='formation-title'>Formación</h1>
             <div className='certificates-container'>
                 {formations.map((item, index) => (
