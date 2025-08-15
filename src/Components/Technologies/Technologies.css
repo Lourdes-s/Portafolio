@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* VARIABLES */
+:root {
+    --color-primario: #eca9a9;
+    --color-claro: rgb(255, 236, 236);
+    --color-oscuro: #c48c8c;
+    --color-background: #ffffff;
+    --color-texto: #000000;
+    --color-texto-claro: #555;
+    --text-defaul: "Poppins", sans-serif;
+}
+
+/* GENERALES */
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--text-defaul);
 }
 
 .technologies {
@@ -16,7 +28,7 @@
 
 .technologies-title {        
     font-size: 3.5rem;
-    color: #eca9a9;
+    color: var(--color-primario);   
     text-align: center;
     font-weight: normal;
     margin-bottom: 25px;
@@ -30,7 +42,7 @@
 }
 
 .technologies-category {
-    background: rgb(255, 236, 236);
+    background: var(--color-claro);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,13 +57,13 @@
 
 .technologies-icon {
     font-size: 3rem;
-    color: #eca9a9; 
+    color: var(--color-primario);
     margin-bottom: 5px; 
 }
 
 .technologies-icon-frontend {
     font-size: 3.5rem; 
-    color: #eca9a9;
+    color: var(--color-primario);
     font-weight: bold;
     margin-bottom: -5px; 
 }
@@ -59,7 +71,7 @@
 .technologies-subtitle {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #333;
+    color: var(--color-texto-claro);
     margin-bottom: 15px;
 }
 
@@ -71,8 +83,8 @@
 }
 
 .technologies-list span {
-    background: #eca9a9;
-    color: #333;
+    background: var(--color-primario);
+    color: var(--color-texto);
     padding: 8px 14px;
     border-radius: 8px;
     font-size: 1rem;

@@ -1,13 +1,28 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* VARIABLES */
+:root {
+    --color-primario: #eca9a9;
+    --color-claro: rgb(255, 236, 236);
+    --color-oscuro: #c48c8c;
+    --color-background: #ffffff;
+    --color-texto: #000000;
+    --color-texto-claro: #555;
+    --text-defaul: "Poppins", sans-serif;
 }
+
+/* GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-defaul);
+}
+
 
 .proyectos h1 {
     font-size: 3.5rem;
-    color: #eca9a9;
+    color: var(--color-primario);
     text-align: center;
     font-weight: normal;
     margin-bottom: 25px;
@@ -23,7 +38,7 @@
 .project-card {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
+    background-color: var(--color-background);
     border-radius: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -51,7 +66,7 @@
 
 .project-content h3 {
     font-size: 1.8rem;
-    color: #eca9a9;
+    color: var(--color-primario);
     margin-bottom: 1rem;
 }
 
@@ -59,7 +74,7 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #444;
+    color: var(--color-texto-claro);
 }
 
 .botones {
@@ -86,25 +101,25 @@
 }
 
 .btn-codigo {
-    background-color: #ffffff;
-    color: #eca9a9;
-    border: 1px solid #eca9a9;
+    background-color: var(--color-background);
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
 }
 
 .btn-demo {
-    background-color: #ffffff;
-    color: #eca9a9;
-    border: 1px solid #eca9a9;
+    background-color: var(--color-background); 
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
 }
 
 .btn-codigo:hover {
-    background-color: #eca9a9;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-background);
 }
 
 .btn-demo:hover {
-    background-color: #eca9a9;
-    color: white;
+    background-color: var(--color-primario);
+    color: var(--color-background);
 }
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */

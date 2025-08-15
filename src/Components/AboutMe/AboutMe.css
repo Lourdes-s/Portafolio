@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* VARIABLES */
+:root {
+    --color-primario: #eca9a9;
+    --color-claro: rgb(255, 236, 236);
+    --color-oscuro: #c48c8c;
+    --color-background: #ffffff;
+    --color-texto: #000000;
+    --color-texto-claro: #555;
+    --text-defaul: "Poppins", sans-serif;
+}
+
+/* GENERALES */
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--text-defaul);
 }
 
 .about-me {
@@ -24,7 +36,7 @@
 
 .about-title {
     font-size: 3.5rem;
-    color: #eca9a9;
+    color: var(--color-primario);
     text-align: right;
     font-weight: normal;
     margin-bottom: 10px;
@@ -39,7 +51,7 @@
     display: block;
     width: 40%;
     height: 3px;
-    background-color: #eca9a9;
+    background-color: var(--color-primario);
     position: absolute;
     right: 0;
     bottom: -5px;
@@ -47,7 +59,7 @@
 
 .about-subtitle {
     font-size: 2rem; 
-    color: #555; 
+    color: var(--color-texto-claro);
     text-align: left; 
     margin-bottom: 20px; 
     max-width: 500px;
@@ -62,12 +74,12 @@
 
 p {
     text-align: left;
-    color: #555; 
+    color: var(--color-texto-claro);
     margin-bottom: 10px; 
 }
 
 .email-highlight {
-    color: #eca9a9; 
+    color: var(--color-primario);
     font-weight: bold;
     padding-left: 5px; 
 }
@@ -80,7 +92,7 @@ p {
 }
 
 .copy-button:hover {
-    color: #eca9a9; 
+    color: var(--color-primario);
 }
 
 .about-image {
@@ -94,7 +106,7 @@ p {
 }
 
 .social-icons {
-    color: #4d4d4d;    
+    color: var(--color-texto-claro);    
     display: flex; 
     justify-content: left; 
     margin-top: 20px;
@@ -105,7 +117,7 @@ p {
 .social-icons a {
     width: 40px;
     height: 40px;
-    background-color: #eca9a9;
+    background-color: var(--color-primario);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -117,7 +129,7 @@ p {
     font-size: 2rem;
     width: 24px;
     height: 24px;
-    color: #464646; 
+    color: var(--color-texto-claro);
 }
 
 .social-icons a:hover {
