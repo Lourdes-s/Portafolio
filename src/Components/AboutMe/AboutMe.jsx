@@ -38,7 +38,7 @@ export const AboutMe = () => {
                 </button>
             </p>
             <div className="social-icons">
-                <a href="https://www.linkedin.com/in/lourdes-santillán-613640152/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/lourdes-santillan" target="_blank" rel="noopener noreferrer">
                     <ImLinkedin2 />
                 </a>
                 <a href="https://github.com/Lourdes-s" target="_blank" rel="noopener noreferrer">
