@@ -5,20 +5,28 @@ import './Footer.css'
 
 export const Footer = () => {
     return (
-        <div class="footer">
+        <div className="footer">
             <h2>¡Gracias por visitar!</h2>
-            <a href="#contacto" class="btn-contact">Contactame</a>
-            <div id="footer" class="footer-content">
-                <div class="social">
+            <a href="#contacto" className="btn-contact">Contactame</a>
+            <div id="footer" className="footer-content">
+
+                {/* Redes sociales */}
+                <div className="social">
                     <h3>También podés contactarme por</h3>
-                    <a href="https://www.linkedin.com/in/lourdes-santillan" target="_blank">
-                        <ImLinkedin2 /> LinkedIn
-                    </a>
-                    <a href="https://www.github.com/Lourdes-s" target="_blank">
-                        <FaGithub /> GitHub
-                    </a>
+                    <div className="social-links">
+                        <a href="https://www.linkedin.com/in/lourdes-santillan" target="_blank">
+                            <span className="icon"><ImLinkedin2 /></span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.github.com/Lourdes-s" target="_blank">
+                            <span className="icon"><FaGithub /></span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-form">
+
+                {/* Formulario */}
+                <div className="contact-form">
                     <label>Nombre</label>
                     <input type="text" name="nombre" />
                     <label>Email</label>
