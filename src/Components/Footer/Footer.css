@@ -105,7 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-texto-claro);
+    color: var(--color-texto);
     font-size: 20px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
