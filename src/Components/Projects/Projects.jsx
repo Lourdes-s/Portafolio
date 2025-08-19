@@ -8,7 +8,7 @@ export const Projects = () => {
             <h1>Proyectos</h1>
             <div className="cards-container">
                 <div className="project-card">
-                    <img src="/assets/images/Mensajeria.jpg" alt="Proyecto Mensajería" />
+                    <img src="/Mensajeria.jpg" alt="Proyecto Mensajería" />
                     <div className="project-content">
                         <h3>Proyecto Mensajería</h3>
                         <p>Aplicación web inspirada en WhatsApp Web, con login, registro, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
@@ -20,7 +20,7 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className="project-card">
-                    <img src="/assets/images/Creamy.jpg" alt="Proyecto Creamy" />
+                    <img src="/Creamy.jpg" alt="Proyecto Creamy" />
                     <div className="project-content">
                         <h3>Creamy</h3>
                         <p>e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores. </p>

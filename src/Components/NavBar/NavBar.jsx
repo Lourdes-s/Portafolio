@@ -19,7 +19,7 @@ export const NavBar = () => {
                     <Link to="formation" smooth={true} duration={500} className="nav-link">Formación</Link>
                 </li>
             </ul>
-            <a href="/assets/documents/CV-Lourdes-Santillan.pdf" target="_blank" className="cv-button">DESARGA MI CV</a>
+            <a href="/CV-Lourdes-Santillan.pdf" target="_blank" className="cv-button">DESARGA MI CV</a>
         </div>
     )
 }

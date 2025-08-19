@@ -17,15 +17,15 @@ export const Formation = () => {
             title: "Diplomatura en Desarrollo Web Full Stack",
             institution: "Universidad Tecnológica Nacional (UTN)",
             year: "2024",
-            img: "/assets/images/Certificado-UTN.jpg",
-            pdf: "/assets/documents/Certificado-UTN.pdf"
+            img: "/Certificado-UTN.jpg",
+            pdf: "/Certificado-UTN.pdf"
         },
         {
             title: "Desarrollo Web Desde Cero: HTML5, CSS3 y JavaScript",
             institution: "Udemy",
             year: "2025",
-            img: "/assets/images/Certificado-Udemy.jpg",
-            pdf: "/assets/documents/Certificado-Udemy.pdf"
+            img: "/Certificado-Udemy.jpg",
+            pdf: "/Certificado-Udemy.pdf"
         }
     ]
     return (
