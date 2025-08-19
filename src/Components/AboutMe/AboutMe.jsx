@@ -1,5 +1,4 @@
 import React from 'react';
-import TestPic from "/assets/images/testPic.png"
 import { ImLinkedin2 } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineContentCopy } from "react-icons/md";
@@ -28,7 +27,7 @@ export const AboutMe = () => {
                     </p>
                 </div>
                 <div className="about-image">
-                    <img src={TestPic} alt="Ilustración de Lourdes Santillán"/>
+                    <img src="/TestPic.png" alt="Ilustración de Lourdes Santillán"/>
                 </div>
             </div>
             <p>
