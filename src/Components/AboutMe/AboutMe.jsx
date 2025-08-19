@@ -1,8 +1,9 @@
 import React from 'react';
-import './AboutMe.css';
+import TestPic from "/assets/images/testPic.png"
 import { ImLinkedin2 } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineContentCopy } from "react-icons/md";
+import './AboutMe.css';
 
 export const AboutMe = () => {
     const email = "lou_santillan98@hotmail.com";
@@ -27,7 +28,7 @@ export const AboutMe = () => {
                     </p>
                 </div>
                 <div className="about-image">
-                    <img src="/assets/images/TestPic.png" alt="Ilustración de Lourdes Santillán"/>
+                    <img src={TestPic} alt="Ilustración de Lourdes Santillán"/>
                 </div>
             </div>
             <p>

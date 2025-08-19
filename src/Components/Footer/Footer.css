@@ -45,7 +45,7 @@
     color: var(--color-texto);
     text-decoration: none;
     margin-bottom: 20px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn-contact:hover {
@@ -151,6 +151,7 @@
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
