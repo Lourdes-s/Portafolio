@@ -130,7 +130,7 @@ p {
     font-size: 2rem;
     width: 24px;
     height: 24px;
-    color: var(--color-texto-claro);
+    color: var(--color-texto);
 }
 
 .social-icons a:hover {
