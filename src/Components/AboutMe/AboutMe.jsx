@@ -1,4 +1,4 @@
-import React, { useContext} from 'react'
+import React, { useContext } from 'react'
 import { ThemeContext } from "../../ThemeContext.jsx"
 import { ImLinkedin2 } from "react-icons/im"
 import { FaGithub } from "react-icons/fa"
