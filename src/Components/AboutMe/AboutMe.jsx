@@ -1,11 +1,14 @@
-import React from 'react';
-import { ImLinkedin2 } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
-import { MdOutlineContentCopy } from "react-icons/md";
-import './AboutMe.css';
+import React, { useContext} from 'react'
+import { ThemeContext } from "../../ThemeContext.jsx"
+import { ImLinkedin2 } from "react-icons/im"
+import { FaGithub } from "react-icons/fa"
+import { MdOutlineContentCopy } from "react-icons/md"
+import './AboutMe.css'
 
 export const AboutMe = () => {
-    const email = "lou_santillan98@hotmail.com";
+    const { darkMode } = useContext(ThemeContext)
+
+    const email = "lou_santillan98@hotmail.com"
     const copyEmailToClipboard = () => {
         navigator.clipboard.writeText(email)
     }
@@ -14,7 +17,7 @@ export const AboutMe = () => {
         <section id="aboutMe" className="about-me">
             <h1 className="about-title">Lourdes Santillán</h1>
             <h2 className="about-subtitle">Bienvenido a mi portafolio como desarrolladora web.</h2>
-            <div className="about-content"> 
+            <div className="about-content">
                 <div className="about-text">
                     <p>
                         Soy profesora de artes visuales con una sólida base en creatividad y expresión artística, pero mi verdadera pasión siempre ha estado vinculada al mundo digital.
@@ -27,11 +30,11 @@ export const AboutMe = () => {
                     </p>
                 </div>
                 <div className="about-image">
-                    <img src="/MePic.png" alt="Ilustración de Lourdes Santillán"/>
+                    <img src={darkMode ? "/MePic-darkmode.png" : "/MePic.png"} alt="Ilustración de Lourdes Santillán" />
                 </div>
             </div>
             <p>
-                Si quieres ponerte en contacto conmigo, escríbeme a 
+                Si quieres ponerte en contacto conmigo, escríbeme a
                 <span className="email-highlight">{email}</span>
                 <button onClick={copyEmailToClipboard} className="copy-button">
                     <MdOutlineContentCopy />

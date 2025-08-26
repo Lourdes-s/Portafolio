@@ -19,13 +19,18 @@
     font-family: var(--text-defaul);
 }
 
+.proyectos {
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: var(--color-background);
+}
 
 .proyectos h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Tamaño responsive */
     color: var(--color-primario);
     text-align: center;
     font-weight: normal;
-    margin-bottom: 25px;
+    margin-bottom: 2rem;
 }
 
 .proyectos .cards-container {
@@ -33,6 +38,7 @@
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    width: 100%;
 }
 
 .project-card {
@@ -55,6 +61,7 @@
     width: 45%;
     object-fit: cover;
     height: auto;
+    min-height: 250px;
 }
 
 .project-content {
@@ -62,16 +69,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 .project-content h3 {
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 3vw, 1.8rem); /* Tamaño responsive */
     color: var(--color-primario);
     margin-bottom: 1rem;
 }
 
 .project-content p {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem); /* Tamaño responsive */
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: var(--color-texto-claro);
@@ -80,6 +88,7 @@
 .botones {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan */
 }
 
 .btn-codigo,
@@ -91,8 +100,9 @@
     padding: 0.6rem 1.2rem;
     border-radius: 0.8rem;
     font-weight: 500;
-    transition: background 0.3s ease, color 0.3s ease;
-    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-size: clamp(0.85rem, 2vw, 0.95rem); /* Tamaño responsive */
+    white-space: nowrap; /* Evita que el texto se divida */
 }
 
 .btn-codigo svg,
@@ -112,60 +122,113 @@
     border: 1px solid var(--color-primario);
 }
 
-.btn-codigo:hover {
-    background-color: var(--color-primario);
-    color: var(--color-background);
-}
-
+.btn-codigo:hover,
 .btn-demo:hover {
     background-color: var(--color-primario);
     color: var(--color-background);
+    transform: translateY(-2px);
 }
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
-@media (max-width: 1020px) {
+@media (max-width: 900px) {
     .project-card {
         flex-direction: column;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .project-card img {
         width: 100%;
-        height: auto;
+        height: 200px; /* Altura fija para mantener consistencia */
     }
 
     .project-content {
         padding: 1.2rem;
     }
+    
+    .botones {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
+    .proyectos {
+        padding: 1.5rem 0.8rem;
+    }
+    
     .proyectos h1 {
         font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .project-content h3 {
         font-size: 1.5rem;
+        text-align: center;
     }
 
-    .btn-codigo,
-    .btn-demo {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+    .project-content p {
+        text-align: justify;
+    }
+    
+    .botones {
+        gap: 0.8rem;
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 480px) {
+    .proyectos {
+        padding: 1rem 0.5rem;
+    }
+    
+    .proyectos h1 {
+        font-size: 1.8rem;
+    }
+    
+    .project-card {
+        border-radius: 0.8rem;
+    }
+    
+    .project-card img {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .botones {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-codigo,
+    .btn-demo {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+    }
+}
 
+@media (max-width: 320px) {
+    .proyectos h1 {
+        font-size: 1.6rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
     .btn-codigo,
     .btn-demo {
         font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+        padding: 0.6rem 0.8rem;
     }
-
+    
     .botones {
-        flex-direction: column;
-        align-items: flex-start;
+        gap: 0.5rem;
     }
 }

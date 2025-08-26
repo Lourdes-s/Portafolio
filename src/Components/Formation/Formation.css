@@ -20,8 +20,9 @@
 }
 
 .formation-container {
-    max-width: 800px;
-    margin: 50px auto;
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: var(--color-background);
 }
 
 .formation-title {

@@ -11,12 +11,25 @@
     --text-defaul: "Poppins", sans-serif;
 }
 
+body.dark-mode{
+    --color-primario: #ff34b1;
+    --color-claro: #7a1c56;
+    --color-oscuro: #fd6ac5;
+    --color-background: #000000;
+    --color-texto: #ffffff;
+    --color-texto-claro: #acacac;
+}
+
 /* GENERALES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--text-defaul);
+}
+
+body{
+    background-color: var(--color-background);
 }
 
 .navbar {
@@ -48,7 +61,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: var(--color-texto-claro);
+    color: var(--color-texto);
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -77,6 +90,32 @@
 .main-content {
     margin-left: 250px;
     padding: 20px;
+}
+
+.switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.switch button {
+    background: var(--color-primario);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-background);
+    font-size: 22px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.switch button:hover {
+    background: var(--color-oscuro);
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
