@@ -94,3 +94,74 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
+
+/* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
+
+@media (max-width: 1020px) {
+    .technologies-title {
+        font-size: 3rem;
+    }
+
+    .technologies-category {
+        width: 220px;
+        padding: 18px;
+    }
+
+    .technologies-subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .technologies-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .technologies-title {
+        font-size: 2.5rem;
+    }
+
+    .technologies-category {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .technologies-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .technologies-list span {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 280px) {
+    .technologies-title {
+        font-size: 2rem;
+    }
+
+    .technologies-category {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .technologies-icon {
+        font-size: 2.5rem;
+    }
+
+    .technologies-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .technologies-list {
+        gap: 6px;
+    }
+
+    .technologies-list span {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+}
