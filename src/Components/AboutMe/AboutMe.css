@@ -22,7 +22,7 @@
 .about-me {
     max-width: 1000px; 
     min-width: 320px; 
-    margin: 30px auto; 
+    margin: 40px auto auto auto; 
     padding: 20px; 
     background-color: var(--color-background);
 }
