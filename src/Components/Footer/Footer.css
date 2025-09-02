@@ -158,3 +158,75 @@
     color: var(--color-background);
     transform: scale(1.1);
 }
+
+/* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
+
+@media (max-width: 1280px) {
+    .footer-content {
+        gap: 20px;
+    }
+
+    .footer h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social,
+    .contact-form {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .social h3 {
+        font-size: 18px;
+    }
+
+    .contact-form label {
+        text-align: left;
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer h2 {
+        font-size: 18px;
+    }
+
+    .btn-contact {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .social .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .social a {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
