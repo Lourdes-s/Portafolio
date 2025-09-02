@@ -8,13 +8,13 @@ import "./NavBar.css";
 
 export const NavBar = () => {
     const { darkMode, toggleTheme } = useContext(ThemeContext);
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false)
 
-    const toggleMenu = () => setOpen(v => !v);
-    const closeMenu = () => setOpen(false);
+    const toggleMenu = () => setOpen(v => !v)
+    const closeMenu = () => setOpen(false)
 
 
-    const linkProps = { smooth: true, duration: 500, className: "nav-link", onClick: closeMenu };
+    const linkProps = { smooth: true, duration: 500, className: "nav-link", onClick: closeMenu }
 
     return (
         <>
@@ -47,5 +47,5 @@ export const NavBar = () => {
                 </a>
             </nav>
         </>
-    );
-};
+    )
+}
