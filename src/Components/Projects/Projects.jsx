@@ -14,7 +14,11 @@ export const Projects = () => {
                     <img src={darkMode ? "/Mensajeria-darkmode.jpg" : "/Mensajeria.jpg"} alt="Proyecto Mensajería" />
                     <div className="project-content">
                         <h3>Proyecto Mensajería</h3>
-                        <p>Aplicación web inspirada en WhatsApp Web, con login, registro, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
+                        <p>Aplicación web inspirada en WhatsApp Web, con login, registro, autenticación de email, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
+                        <div className="project-technologies">
+                            <p>Tecnologías utilizadas:</p>
+                            <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MYSQL</p>
+                        </div>
                         <div className="botones">
                             <a href="https://github.com/Lourdes-s/Proyecto-Final-UTN-Frontend" className="btn-codigo" target="_blank" rel="noopener noreferrer"><PiGithubLogo /> Frontend</a>
                             <a href="https://github.com/Lourdes-s/Proyecto-Final-UTN-Backend" className="btn-codigo" target="_blank" rel="noopener noreferrer"><PiGithubLogo /> Backend</a>
@@ -27,6 +31,10 @@ export const Projects = () => {
                     <div className="project-content">
                         <h3>Creamy</h3>
                         <p>e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores. </p>
+                        <div className="project-technologies">
+                            <p>Tecnologías utilizadas:</p>
+                            <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MONGODB</p>
+                        </div>
                         <div className="botones">
                             <a href="https://github.com/Lourdes-s/Creamy-Frontend" className="btn-codigo" target="_blank" rel="noopener noreferrer"><PiGithubLogo /> Frontend</a>
                             <a href="https://github.com/Lourdes-s/Creamy-Backend" className="btn-codigo" target="_blank" rel="noopener noreferrer"><PiGithubLogo /> Backend</a>

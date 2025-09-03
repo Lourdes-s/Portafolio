@@ -85,6 +85,8 @@
     color: var(--color-texto-claro);
 }
 
+
+
 .botones {
     display: flex;
     gap: 1rem;
@@ -127,6 +129,17 @@
     background-color: var(--color-primario);
     color: var(--color-background);
     transform: translateY(-2px);
+}
+
+.project-technologies{
+    display: flex; 
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+.project-technologies-list{
+    font-weight: bold;
+    color: var(--color-primario);
 }
 
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
