@@ -15,6 +15,11 @@ export const Projects = () => {
                     <div className="project-content">
                         <h3>Proyecto Mensajería</h3>
                         <p>Aplicación web inspirada en WhatsApp Web, con login, registro, autenticación de email, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
+                        <div className="project-user-test">
+                            <p className="user-test-title">Usuario de prueba</p>
+                            <p><span className="user-test-subtitle">Correo:</span> lourdes.tests@gmail.com</p>
+                            <p><span className="user-test-subtitle">Contraseña:</span> Mensajeria123</p>
+                        </div>
                         <div className="project-technologies">
                             <p>Tecnologías utilizadas:</p>
                             <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MYSQL</p>
@@ -31,6 +36,11 @@ export const Projects = () => {
                     <div className="project-content">
                         <h3>Creamy</h3>
                         <p>e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores. </p>
+                        <div className="project-user-test">
+                            <p className="user-test-title">Usuario de prueba - Admin</p>
+                            <p><span className="user-test-subtitle">Correo:</span> admin@creamy.com</p>
+                            <p><span className="user-test-subtitle">Contraseña:</span> CreamyAdmin</p>
+                        </div>
                         <div className="project-technologies">
                             <p>Tecnologías utilizadas:</p>
                             <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MONGODB</p>

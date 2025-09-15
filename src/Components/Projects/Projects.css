@@ -26,7 +26,7 @@
 }
 
 .proyectos h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem); 
+    font-size: clamp(2rem, 5vw, 3.5rem);
     color: var(--color-primario);
     text-align: center;
     font-weight: normal;
@@ -79,7 +79,7 @@
 }
 
 .project-content p {
-    font-size: clamp(0.9rem, 2vw, 1rem); 
+    font-size: clamp(0.9rem, 2vw, 1rem);
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: var(--color-texto-claro);
@@ -90,7 +90,7 @@
 .botones {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .btn-codigo,
@@ -104,7 +104,7 @@
     font-weight: 500;
     transition: all 0.3s ease;
     font-size: clamp(0.85rem, 2vw, 0.95rem);
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .btn-codigo svg,
@@ -119,7 +119,7 @@
 }
 
 .btn-demo {
-    background-color: var(--color-background); 
+    background-color: var(--color-background);
     color: var(--color-primario);
     border: 1px solid var(--color-primario);
 }
@@ -131,15 +131,35 @@
     transform: translateY(-2px);
 }
 
-.project-technologies{
-    display: flex; 
+.project-technologies {
+    display: flex;
     gap: 0.5rem;
     flex-wrap: nowrap;
 }
 
-.project-technologies-list{
+.project-technologies-list {
     font-weight: bold;
     color: var(--color-primario);
+}
+
+.project-user-test {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1.3rem;
+}
+
+.project-user-test p {
+    margin: 0.2rem 0;
+    line-height: 1.3;
+}
+
+.user-test-title {
+    font-weight: 600;
+}
+
+.user-test-subtitle {
+    font-weight: 600;
+    margin-right: 0.3rem;
 }
 
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
@@ -164,7 +184,7 @@
 
 @media (max-width: 768px) {
     .project-card {
-        flex-direction: column; 
+        flex-direction: column;
         max-width: 500px;
     }
 
