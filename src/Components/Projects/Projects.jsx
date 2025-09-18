@@ -37,7 +37,7 @@ export const Projects = () => {
                         <h3>Creamy</h3>
                         <p>e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores. </p>
                         <div className="project-user-test">
-                            <p className="user-test-title">Usuario de prueba - Admin</p>
+                            <p className="user-test-title">Usuario de prueba (admin)</p>
                             <p><span className="user-test-subtitle">Correo:</span> admin@creamy.com</p>
                             <p><span className="user-test-subtitle">Contraseña:</span> CreamyAdmin</p>
                         </div>
