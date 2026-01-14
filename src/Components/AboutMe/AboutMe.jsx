@@ -1,4 +1,6 @@
 import React, { useContext } from 'react'
+import { LanguageContext } from "../../LanguageContext.jsx"
+import { texts } from "../../texts.js"
 import { ThemeContext } from "../../ThemeContext.jsx"
 import { ImLinkedin2 } from "react-icons/im"
 import { FaGithub } from "react-icons/fa"
@@ -7,6 +9,9 @@ import './AboutMe.css'
 
 export const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext)
+    const { lang } = useContext(LanguageContext)
+
+    const t = texts[lang].about
 
     const email = "lou_santillan98@hotmail.com"
     const copyEmailToClipboard = () => {
@@ -16,25 +21,19 @@ export const AboutMe = () => {
     return (
         <section id="aboutMe" className="about-me">
             <h1 className="about-title">Lourdes Santillán</h1>
-            <h2 className="about-subtitle">Bienvenido a mi portafolio como desarrolladora web.</h2>
+            <h2 className="about-subtitle">{t.subtitle}</h2>
             <div className="about-content">
                 <div className="about-text">
-                    <p>
-                        Soy profesora de artes visuales con una sólida base en creatividad y expresión artística, pero mi verdadera pasión siempre ha estado vinculada al mundo digital.
-                    </p>
-                    <p>
-                        Desde hace años, he explorado el dibujo digital y la edición de imágenes, combinando mi amor por el arte con las herramientas tecnológicas. Durante la pandemia, se despertó en mí el interés por el desarrollo web.
-                    </p>
-                    <p>
-                        Esta curiosidad me llevó a cursar una diplomatura en desarrollo Full Stack en la UTN. Aunque disfruto de los aspectos visuales y creativos del desarrollo, mi curiosidad y habilidades técnicas me han llevado a enfocarme en el backend.
-                    </p>
+                    <p>{t.p1}</p>
+                    <p>{t.p2}</p>
+                    <p>{t.p3}</p>
                 </div>
                 <div className="about-image">
                     <img src={darkMode ? "/MePic-darkmode.png" : "/MePic.png"} alt="Ilustración de Lourdes Santillán" />
                 </div>
             </div>
             <p>
-                Si quieres ponerte en contacto conmigo, escríbeme a
+                {t.contact}
                 <span className="email-highlight">{email}</span>
                 <button onClick={copyEmailToClipboard} className="copy-button">
                     <MdOutlineContentCopy />
