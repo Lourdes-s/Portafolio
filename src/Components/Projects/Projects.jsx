@@ -1,4 +1,6 @@
 import React, { useContext } from 'react'
+import { LanguageContext } from "../../LanguageContext.jsx"
+import { texts } from "../../texts.js"
 import { ThemeContext } from "../../ThemeContext.jsx"
 import { PiGithubLogo, PiLink } from "react-icons/pi"
 import "./Projects.css"
@@ -6,22 +8,25 @@ import "./Projects.css"
 
 export const Projects = () => {
     const { darkMode } = useContext(ThemeContext)
+    const { lang } = useContext(LanguageContext)
+    
+    const t = texts[lang].projects
     return (
         <div id="projects" className="proyectos">
-            <h1>Proyectos</h1>
+            <h1>{t.title}</h1>
             <div className="cards-container">
                 <div className="project-card">
                     <img src={darkMode ? "/Mensajeria-darkmode.jpg" : "/Mensajeria.jpg"} alt="Proyecto Mensajería" />
                     <div className="project-content">
-                        <h3>Proyecto Mensajería</h3>
-                        <p>Aplicación web inspirada en WhatsApp Web, con login, registro, autenticación de email, chats entre usuarios y edición de perfil. Incluye diseño responsive y scroll infinito en los mensajes.</p>
+                        <h3>{t.subtitleMsj}</h3>
+                        <p>{t.p1Msj}</p>
                         <div className="project-user-test">
-                            <p className="user-test-title">Usuario de prueba</p>
-                            <p><span className="user-test-subtitle">Correo:</span> lourdes.tests@gmail.com</p>
-                            <p><span className="user-test-subtitle">Contraseña:</span> Mensajeria123</p>
+                            <p className="user-test-title">{t.p2Msj}</p>
+                            <p><span className="user-test-subtitle">{t.p3Msj}</span> lourdes.tests@gmail.com</p>
+                            <p><span className="user-test-subtitle">{t.p4Msj}</span> Mensajeria123</p>
                         </div>
                         <div className="project-technologies">
-                            <p>Tecnologías utilizadas:</p>
+                            <p>{t.p5Msj}</p>
                             <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MYSQL</p>
                         </div>
                         <div className="botones">
@@ -35,14 +40,14 @@ export const Projects = () => {
                     <img src={darkMode ? "/Creamy-darkmode.jpg" : "/Creamy.jpg"} alt="Proyecto Creamy" />
                     <div className="project-content">
                         <h3>Creamy</h3>
-                        <p>e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores. </p>
+                        <p>{t.p1Crm}</p>
                         <div className="project-user-test">
-                            <p className="user-test-title">Usuario de prueba (admin)</p>
-                            <p><span className="user-test-subtitle">Correo:</span> admin@creamy.com</p>
-                            <p><span className="user-test-subtitle">Contraseña:</span> CreamyAdmin</p>
+                            <p className="user-test-title">{t.p2Crm}</p>
+                            <p><span className="user-test-subtitle">{t.p3Crm}</span> admin@creamy.com</p>
+                            <p><span className="user-test-subtitle">{t.p4Crm}</span> CreamyAdmin</p>
                         </div>
                         <div className="project-technologies">
-                            <p>Tecnologías utilizadas:</p>
+                            <p>{t.p5Crm}</p>
                             <p className="project-technologies-list">JAVASCRIPT REACT NODE.JS EXPRESS MONGODB</p>
                         </div>
                         <div className="botones">
