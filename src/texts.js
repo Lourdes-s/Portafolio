@@ -24,6 +24,14 @@ export const texts = {
             p3Crm: "Correo:",
             p4Crm: "Contraseña:",
             p5Crm: "Tecnologías utilizadas:"
+        },
+        formation:{
+            title: "Formación",
+            p1: "Diplomatura en Desarrollo Web Full Stack",
+            p2: "Universidad Tecnológica Nacional (UTN)",
+            p3: "Ver certificado",
+            p4: "Desarrollo Web Desde Cero: HTML5, CSS3 y JavaScript",
+            p5: "Udemy"
         }
     },
     en: {
@@ -51,6 +59,14 @@ export const texts = {
             p3Crm: "Email:",
             p4Crm: "Password:",
             p5Crm: "Technologies used:"
+        },
+        formation: {
+            title: "Formation",
+            p1: "Full Stack Web Development Diploma",
+            p2: "National Technological University (UTN)",
+            p3: "View certificate",
+            p4: "Web Development From Scratch: HTML5, CSS3 and JavaScript",
+            p5: "Udemy"
         }
     }
 }
