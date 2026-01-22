@@ -61,7 +61,7 @@ export const texts = {
             p5Crm: "Technologies used:"
         },
         formation: {
-            title: "Formation",
+            title: "Education",
             p1: "Full Stack Web Development Diploma",
             p2: "National Technological University (UTN)",
             p3: "View certificate",
