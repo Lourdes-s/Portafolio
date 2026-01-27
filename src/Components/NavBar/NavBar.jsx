@@ -16,7 +16,7 @@ export const NavBar = () => {
     const toggleMenu = () => setOpen(v => !v)
     const closeMenu = () => setOpen(false)
 
-const t = texts[lang].navbar
+const t = texts[lang].navBar
     const linkProps = { smooth: true, duration: 500, className: "nav-link", onClick: closeMenu }
 
     return (
