@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../ThemeContext.jsx";
+import { LanguageContext } from "../../LanguageContext.jsx"
+import { texts } from "../../texts.js"
 import { Link } from "react-scroll";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,13 +9,14 @@ import { IoClose } from "react-icons/io5";
 import "./NavBar.css";
 
 export const NavBar = () => {
-    const { darkMode, toggleTheme } = useContext(ThemeContext);
+    const { darkMode, toggleTheme } = useContext(ThemeContext)
+    const { lang } = useContext(LanguageContext)
     const [open, setOpen] = useState(false)
 
     const toggleMenu = () => setOpen(v => !v)
     const closeMenu = () => setOpen(false)
 
-
+const t = texts[lang].navbar
     const linkProps = { smooth: true, duration: 500, className: "nav-link", onClick: closeMenu }
 
     return (
@@ -36,14 +39,14 @@ export const NavBar = () => {
                 </div>
 
                 <ul className="list">
-                    <li className="list-item"><Link to="aboutMe" {...linkProps}>Sobre mí</Link></li>
-                    <li className="list-item"><Link to="technologies" {...linkProps}>Tecnologías</Link></li>
-                    <li className="list-item"><Link to="projects" {...linkProps}>Proyectos</Link></li>
-                    <li className="list-item"><Link to="formation" {...linkProps}>Formación</Link></li>
+                    <li className="list-item"><Link to="aboutMe" {...linkProps}>{t.p1}</Link></li><li className="list-item"><Link to="skills" {...linkProps}>{t.p2}</Link></li>
+                    <li className="list-item"><Link to="technologies" {...linkProps}>{t.p2}</Link></li>
+                    <li className="list-item"><Link to="projects" {...linkProps}>{t.p3}</Link></li>
+                    <li className="list-item"><Link to="formation" {...linkProps}>{t.p4}</Link></li>
                 </ul>
 
                 <a href="/CV-Lourdes-Santillan.pdf" target="_blank" className="cv-button">
-                    DESARGA MI CV
+                    {t.p5}
                 </a>
             </nav>
         </>

@@ -32,6 +32,13 @@ export const texts = {
             p3: "Ver certificado",
             p4: "Desarrollo Web Desde Cero: HTML5, CSS3 y JavaScript",
             p5: "Udemy"
+        },
+        navBar:{
+            p1: "Sobre mi",
+            p2: "Tecnologías",
+            p3: "Proyectos",
+            p4: "Formación",
+            p5: "DESCARGA MI CV"
         }
     },
     en: {
@@ -67,6 +74,13 @@ export const texts = {
             p3: "View certificate",
             p4: "Web Development From Scratch: HTML5, CSS3 and JavaScript",
             p5: "Udemy"
+        }, 
+        navBar: {
+            p1: "About me",
+            p2: "Technologies",
+            p3: "Projects",
+            p4: "Education",
+            p5: "DOWNLOAD MY CV"
         }
     }
 }
