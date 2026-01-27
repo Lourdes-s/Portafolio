@@ -19,7 +19,7 @@ export const texts = {
             p3Msj: "Correo:",
             p4Msj: "Contraseña:",
             p5Msj: "Tecnologías utilizadas:",
-            p1Crm: "e-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores.",
+            p1Crm: "E-commerce que permite explorar un catálogo de productos, visualizar detalles, filtrar por categorías y gestionar un CRUD del carrito. CRUD de productos accesible solo por administradores.",
             p2Crm: "Usuario de prueba (admin)",
             p3Crm: "Correo:",
             p4Crm: "Contraseña:",
@@ -34,7 +34,7 @@ export const texts = {
             p5: "Udemy"
         },
         navBar:{
-            p1: "Sobre mi",
+            p1: "Sobre mí",
             p2: "Tecnologías",
             p3: "Proyectos",
             p4: "Formación",
