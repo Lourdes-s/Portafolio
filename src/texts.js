@@ -39,6 +39,15 @@ export const texts = {
             p3: "Proyectos",
             p4: "Formación",
             p5: "DESCARGA MI CV"
+        },
+        footer:{
+            title:"¡Gracias por visitar!",
+            subtitle:"También podés contactarme por",
+            btn1:"Contactame",
+            btn2:"Enviar",
+            form1:"Nombre:",
+            form2:"Email:",
+            form3:"Mensaje:"
         }
     },
     en: {
@@ -81,6 +90,15 @@ export const texts = {
             p3: "Projects",
             p4: "Education",
             p5: "DOWNLOAD MY CV"
+        },
+        footer:{
+            title:"Thanks for visiting!",
+            subtitle:"You can also reach me via",
+            btn1:"Contact me",
+            btn2:"Send",
+            form1:"Name:",
+            form2:"Email:",
+            form3:"Message:"
         }
     }
 }
