@@ -86,13 +86,16 @@ body {
     background: var(--color-oscuro);
 }
 
-.switch {
+.top-actions {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.switch button {
+.icon-btn {
     background: var(--color-primario);
     color: var(--color-background);
     border: none;
@@ -107,9 +110,24 @@ body {
     transition: transform .2s, background .25s;
 }
 
-.switch button:hover {
+.icon-btn:hover {
     transform: scale(1.08);
-    background: var(--color-oscuro);
+}
+
+.lang-btn {
+    background: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    color: var(--color-background);
+    padding: 8px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .25s, color .25s, transform .2s;
+}
+
+.lang-btn:hover {
+    transform: scale(1.08);
 }
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */

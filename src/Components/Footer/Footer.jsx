@@ -1,8 +1,8 @@
 import React, { useRef, useContext } from 'react'
 import { LanguageContext } from "../../LanguageContext.jsx"
 import { texts } from "../../texts.js"
-import { ImLinkedin2 } from "react-icons/im";
-import { FaGithub } from "react-icons/fa";
+import { ImLinkedin2 } from "react-icons/im"
+import { FaGithub } from "react-icons/fa"
 import emailjs from "emailjs-com"
 import './Footer.css'
 
